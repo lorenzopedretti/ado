@@ -1,0 +1,52 @@
+program remove_accents
+    version 18
+  
+    syntax anything
+	gettoken var anything : anything
+	if (`"`aynthing'"' != "") error 198
+quietly{
+	replace `var'=subinstr(`var',"à","a",.)
+	replace `var'=subinstr(`var',"â","a",.)
+	replace `var'=subinstr(`var',"è","e",.)
+	replace `var'=subinstr(`var',"ê","e",.)
+	replace `var'=subinstr(`var',"é","e",.)
+	replace `var'=subinstr(`var',"ì","i",.)
+	replace `var'=subinstr(`var',"ò","o",.)
+	replace `var'=subinstr(`var',"ù","u",.)
+	replace `var'=subinstr(`var',"ç","c",.)
+	replace `var'=subinstr(`var',"à","a",.)
+	replace `var'=subinstr(`var',"â","a",.)
+	replace `var'=subinstr(`var',"è","e",.)
+	replace `var'=subinstr(`var',"ê","e",.)
+	replace `var'=subinstr(`var',"é","e",.)
+	replace `var'=subinstr(`var',"ì","i",.)
+	replace `var'=subinstr(`var',"ò","o",.)
+	replace `var'=subinstr(`var',"ù","u",.)
+	replace `var'=subinstr(`var',"À","a",.)
+	replace `var'=subinstr(`var',"Á","a",.)
+	replace `var'=subinstr(`var',"Â","a",.)
+	replace `var'=subinstr(`var',"Ã","a",.)
+	replace `var'=subinstr(`var',"Ä","a",.)
+	replace `var'=subinstr(`var',"Å","a",.)
+	replace `var'=subinstr(`var',"Ç","c",.)
+	replace `var'=subinstr(`var',"È","e",.)
+	replace `var'=subinstr(`var',"Ê","e",.)
+	replace `var'=subinstr(`var',"É","e",.)
+	replace `var'=subinstr(`var',"Ë","e",.)
+	replace `var'=subinstr(`var',"Ì","i",.)
+	replace `var'=subinstr(`var',"Í","i",.)
+	replace `var'=subinstr(`var',"Î","i",.)
+	replace `var'=subinstr(`var',"Ï","i",.)
+	replace `var'=subinstr(`var',"Ï","i",.)
+	replace `var'=subinstr(`var',"Ñ","n",.)
+	replace `var'=subinstr(`var',"Ò","o",.)
+	replace `var'=subinstr(`var',"Ó","o",.)
+	replace `var'=subinstr(`var',"Ô","o",.)
+	replace `var'=subinstr(`var',"Õ","o",.)
+	replace `var'=subinstr(`var',"Ö","o",.)
+	replace `var'=subinstr(`var',"Ù","u",.)
+	replace `var'=subinstr(`var',"Ú","u",.)
+	replace `var'=subinstr(`var',"Û","u",.)
+	replace `var'=subinstr(`var',"Û","u",.)
+}
+end
